@@ -288,11 +288,11 @@ ul li a:hover {
   height:20px;
   background-color: blue;
 }
-@keyframe database{
+/* @keyframe database{
   to{
   width:50%;
-  }
-
+  } */ */
+/* 
 }
 .c {
   width: 80%;
@@ -301,7 +301,7 @@ ul li a:hover {
 .communication-skills {
   width: 70%;
   animation: communication-skills, 3s;
-}
+} */
 #CONTACTS {
   padding: 50px;
   /* text-align: center; */
