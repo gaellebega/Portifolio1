@@ -359,6 +359,9 @@ textarea {
 }
 #CONTACTS {
   padding-top: 10px;
+  padding-left: 60px;
+  margin-bottom:280px;
+  
 }
 .bar-box{
   color:black;
@@ -380,7 +383,4 @@ textarea {
 }
 .left-header{
   width:100%;
-}
-#HOME{
-  background-image: url;
 }
