@@ -307,11 +307,12 @@ ul li a:hover {
   /* text-align: center; */
   gap: 30px;
   display: grid;
+  
 }
 .contacts {
   width: 34%;
-  /* padding:20px;
-    margin:20px; */
+   /* padding:20px; */
+     /* margin-left:20px;  */
 }
 .contacts p {
   /* margin:36px; */
