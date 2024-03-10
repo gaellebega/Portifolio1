@@ -21,6 +21,9 @@ body {
   align-items: center;
   width: 25%;
 }
+.hidden-menu{
+  display: none;
+}
 header {
   position: fixed;
   top: 0;
@@ -97,6 +100,26 @@ ul li a:hover {
   background-color: rgb(247, 247, 247);
 }
 
+/* @media screen and (max-width:600px){
+  #left-header{
+    display:none;
+  }
+  .icon{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
+.icon div{
+    /* width: 85px; 
+    margin-bottom: 10px;
+}
+
+  *{
+    padding-right: 2%;
+  }
+ } */
+ 
 .words-container {
   width: 30%;
   padding-top: 30%;
@@ -200,45 +223,40 @@ ul li a:hover {
   padding-top: 250px;
   padding-bottom: 300px;
 }
-.pimage {
+.projects-img{
   display: flex;
   flex-direction: row;
-  gap: 50%;
+
 }
-.imgproject {
-  display: flex;
-  flex-direction: row;
-  width: 78%;
-  gap: 3%;
-  justify-content: space-between;
+.projects-img img{
+    width: 90%;
 }
-.imgproject img {
+/* .imgproject img {
   width: 57%;
-}
+} */
 .fixedimg {
-  width: 80%;
-  height: 300px;
+  width: 90%;
   background-position: center;
   background-size: cover;
   background-image: url(city.jfif);
+  height: 600px;
   background-attachment: fixed;
+  display: flex;
+  flex-direction: row;
+  gap: 25%;
+  justify-content: center;
+
 }
 .fixedimgdata {
   color: aliceblue;
   display: flex;
-  justify-content: center;
-  gap: 200px;
+  flex-direction: column;
   font-size: larger;
   font-family: "Figtree", sans-serif;
+  align-items: center;
+
 }
-.fixedimgnumbers {
-  color: aliceblue;
-  display: flex;
-  justify-content: center;
-  gap: 300px;
-  font-size: larger;
-  font-family: "Figtree", sans-serif;
-}
+
 #SKILLS {
   margin-left: 5%;
 }
@@ -306,8 +324,8 @@ ul li a:hover {
   padding: 50px;
   /* text-align: center; */
   gap: 30px;
-  display: grid;
-  
+  display: flex;
+  flex-direction: row;  
 }
 .contacts {
   width: 34%;
@@ -378,9 +396,67 @@ textarea {
 .html_skill{
   animation: html 2s forwards;
   width:60%;
-  color:orange;
+  color:rgb(9, 255, 0);
   height:20px;
 }
 .left-header{
   width:100%;
+}
+@media screen and (max-width:320px){
+ .icon{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+ }
+ .icon div{
+  width: 70%;
+  margin-bottom: 20px;
+ }
+ body{
+  width: 100%;
+  background-color: #c4c4cf;
+ }
+ #right-section{
+  width: 100%;
+  right: 0%;
+  left: 0%;
+  margin-right: 0%;
+ }
+ #left-header{
+  display: none;
+ }
+ .hidden-menu{
+  display: flex;
+  padding: 8px;
+ }
+ .icon-service{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+ }
+ .icon-service div{
+  width: 80%;
+  padding-left: 10px;
+ }
+ .fixedimg{
+  width: 100%;
+  height: 500px;
+  gap: 12px;
+ }
+ .fixedimgdata{
+  width: 80%;
+  gap: 10px;
+ }
+ .projects-img{
+  display: flex;
+  flex-direction: column;
+  gap: 2%;
+}
+.all {
+  display: flex;
+  flex-direction: column;
+}
+.contacts{
+  width: 100%;
+}
 }
